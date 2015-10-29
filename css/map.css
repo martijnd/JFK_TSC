@@ -1,0 +1,458 @@
+/* Style for our header texts
+    * --------------------------------------- */
+    h1{
+        font-size: 5em;
+        font-family: arial,helvetica;
+        color: #fff;
+        margin:0;
+        padding:0;
+    }
+
+    /* Centered texts in each section
+    * --------------------------------------- */
+    .section{
+        text-align:center;
+        overflow: hidden;
+    }
+
+    video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top:0;
+        right:0;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        background-color: black; /* in case the video doesn't fit the whole page*/
+        background-image: /* our video */;
+        background-position: center center;
+        background-size: contain;
+        object-fit: cover; /*cover video background */
+        z-index:3;
+    }
+
+
+
+    /* Layer with position absolute in order to have it over the video
+    * --------------------------------------- */
+    #section0 #section1 .section{
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        left: 0;
+        top: 43%;
+    }
+
+    /*solves problem with overflowing video in Mac with Chrome */
+    #section0{
+        overflow: hidden;
+    }
+
+    #   #section0{
+        overflow: hidden;
+    }
+
+
+
+
+    /* Bottom menu
+    * --------------------------------------- */
+    #infoMenu li a {
+        color: #fff;
+    }
+
+
+
+
+
+.buttonText{
+    color:red;
+    font-size: 25px;
+    text-align: right;
+}
+
+
+#banner{
+    background-color: #111234;
+}
+
+                                                        /*BUTTONS*/
+#buttonHide{
+    display: block;
+    margin: auto;
+   
+}
+
+.buttonMap{
+    display: block;
+    position: absolute;
+    border: none;
+    padding: 4em;
+    width: 10%;
+    height: 20%;
+
+
+
+}
+
+.buttonMap:focus{
+    outline:none;
+
+}
+.buttonMap:hover{
+    cursor: pointer;
+}
+
+#button1{
+    background: url(../imgs/motorcade-icon.png) no-repeat center center; 
+    top: 20%;
+    left: 46%;
+    transform: rotate(3deg);
+ }
+
+#button2{
+    background: url(../imgs/1st.png) no-repeat center center; 
+    top: 52%;
+    left: 27%;
+    transform: rotate(2deg);
+
+}
+
+#button3{
+    background: url(../imgs/2nd.png) no-repeat center center; 
+    top: 61%;
+    left: 40%;
+    transform: rotate(-2deg);
+
+}
+
+#button4{
+    background: url(../imgs/3rd.png) no-repeat center center; 
+    display: block;
+    top: 67%;
+    left: 53%;
+    transform: rotate(2deg);
+
+}
+
+#button5{
+    background: url(../imgs/lee-icon.png) no-repeat center center; 
+    top: 45%;
+    left: 15%;
+   transform: rotate(-5deg);
+
+}
+
+
+
+#button6{
+    background: url(../imgs/back-icon.png) no-repeat center center; 
+     top: 48%;
+    left: 85%;
+    transform: rotate(-4deg);
+    position: absolute;
+    z-index: 1;
+
+
+}
+
+#button7{
+    background: url(../imgs/back-icon.png) no-repeat center center;
+    top: 64%;
+    left: 5%;
+    z-index: 9999;
+    transform: rotate(5deg);
+    display: none;
+
+
+}
+
+#buttonClose{
+    cursor:pointer;
+    background: url(../imgs/close.png) no-repeat center center; 
+    border: none;
+    padding: 2em;
+    position: relative;
+    float: right;
+}
+
+#video{
+    color: blue;
+    background-color: none;
+}
+
+#kaartVideo1{
+      height: 15%;
+    width: 374%;
+    position: relative;
+    display: block;
+    margin-top: -70%;
+        border: 14px solid #fff;
+    box-shadow: 0px 15px 24px #3B3B3B;
+    border-bottom: 9em solid #fff;  
+
+}
+
+/*                                                      MAP     */
+
+.map{
+    height: 100%;
+     background: url(../imgs/prikbord-dealey.png) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      max-width:100%;
+
+}
+
+
+#mapInfo{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    opacity:0.7;
+
+}
+
+#mapText{
+    color: white;
+    padding-top: 15%;
+    height: 100%;
+    font-size: 3.5em;
+
+}
+
+
+#overlay{
+  background-color: #F5F291;
+    /*background-color: rgba(17, 18, 52, 0.8);*/
+    box-shadow : 0px 15px 24px #3B3B3B;
+    width: 50%;
+    height: 56%;
+    position: absolute;
+    font-family: 'Inconsolata', cursive;
+    color: #555;
+}
+
+.yellowBar{
+    height: 15%;
+    width: 100%;
+    background-color: #EFEC53;
+    position: absolute;
+
+}
+
+#text{
+    color: white;
+    text-align: left;
+    display: block;
+    float: left;
+    width: 25%;
+    margin-left: 10%;
+}
+
+#video > span > h2 {
+    color: white;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+#text > span > p {
+
+    color: #000;
+    margin-left: -60px;
+    margin-top: 10%;
+    position: relative;
+    transform: rotate(-2deg);
+
+}
+
+.description{
+    background-color: #F5F291;
+    font-family: 'Shadows Into Light', bold;
+    /*background: rgba(17, 18, 52, 0.8);*/
+    color: #000;
+    position: absolute;
+    padding: 1em;
+    width: 11%;
+    box-shadow : 0px 10px 20px #000;
+    font-weight: bold;
+
+}
+
+
+#displayNames{
+
+    margin-left: auto;
+    position: absolute;
+    left: 6%;
+    top: 13%;
+        transform: rotate(-15deg);
+
+
+
+}
+
+.display{
+    border: none;
+    margin-left: auto;
+    position: absolute;
+    cursor:pointer;
+    background-color: #F5F291;
+    color: #000;
+    position: absolute;
+    padding: 1em;
+    width: 11%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1em;
+    /*box-shadow: inset 0px 38px 2px #EFEC53;*/
+    box-shadow : 0px 14px 28px #000;
+
+    height: 19%;
+    font-weight: bold;
+}
+
+
+
+#backToRoom > p{
+    margin-top: -1px;
+}
+#back{
+    display: none;
+}
+
+#funeralDescription{
+    right: 4%;
+    top: 45%;
+      transform: rotate(9deg);
+
+  
+}
+
+
+#displayNames:focus {
+    outline:0;
+ }
+
+#funeralButton{
+    border: none;
+    margin-left: auto;
+    position: absolute;
+    left: 0;
+    cursor:pointer;
+    background-color: #111234;
+    color: white;
+    position: absolute;
+    padding: 1em;
+    width: 11%;
+    top: 4%;
+    left: 80%;
+    border: 2px solid red;
+    /*box-shadow : 0px 15px 24px #3B3B3B;*/
+}
+
+#oswald{
+         border: 14px solid #fff;
+    box-shadow: 0px 15px 24px #3B3B3B;
+    border-bottom: 9em solid #fff;  
+}
+
+.buttonText{
+    display: none;
+}
+
+
+
+.main {
+  
+    height: 100%;
+     background: url(../imgs/prikbord-dealey2.png) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+button{
+    position: absolute;
+}
+
+
+    .buttonText{
+    display: block;
+    color: #fff;
+    z-index: 99999;
+    position: relative;
+    text-align: left;
+    left: 0.5em;
+    top: 0;
+    font-family: 'Inconsolata', bold;
+    font-size: 1.5em;
+
+    }
+
+button{
+    position: absolute;
+}
+
+@media screen and (max-width: 480px) { 
+
+    #funeralDescription{
+    display: none;
+}
+    .buttonMap{
+        height: 0;
+        position: absolute;
+        display: block;
+    }
+
+     #displayNames {
+        display:none;
+     }
+
+    .buttonMap{
+        height: 0;
+        width: 50%;
+    }
+
+    #button1{
+        top: 26%;
+        left: 36%;
+        transform: none;
+    }
+
+
+ 
+
+    #button2{
+        transform: none;
+        top: 58%;
+        left: 7%;
+    }
+
+    #button3{
+        transform: none;
+         top: 61%;
+        left: 38%;
+    }
+        #button4{
+        transform: none;
+        top: 64%;
+        left: 69%;
+    }
+        #button5{
+        transform: none;
+       top: 41%;
+        left: 0;
+    }
+            #button6{
+        transform: none;
+       top: 89%;
+        left: 0;
+    }
+}

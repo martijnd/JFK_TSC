@@ -1,0 +1,1446 @@
+@font-face {
+    font-family: 'Mr Dafoe', cursive;
+    font-family: 'Special Elite', cursive;
+}
+/*bigger*/
+@media all and (max-width: 1980px) and (min-width: 1265px) {
+  #artH1 {
+    font-size:9em;
+  }
+  #artH2{
+    font-size:2em;
+  }
+}
+
+/*desktop*/
+@media all and (max-width: 1265px) and (min-width: 1024px) {
+  #artH1 {
+    font-size:8em;
+  }
+  #artH2{
+    font-size:1.5em;
+  }
+}
+
+/*tablet*/
+@media all and (max-width: 1024px) and (min-width: 600px) {
+  #artH1 {
+    font-size:7em;
+  }
+  #artH2{
+    font-size:1.2em;
+  }
+
+    #map{
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    position:absolute;
+    background-position: center center;
+}
+
+#tvPage{
+    height:457px;
+    width:633px;
+    z-index:1;
+    top:50%;
+    left:100%;
+    margin-top:-228px;
+    margin-left:-316px;
+    position:relative;
+    background-position: center center;
+    display:none;
+}
+
+#tvTime{
+    height:400px;
+    width:500px;
+    z-index:3;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-210px;
+    margin-top:-120px;
+    display:none;
+}
+
+#tvTimeVid{
+    height:240px;
+    width:320px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-210px;
+    margin-top:-120px;
+    z-index:-1;
+
+    display:none;
+}
+
+
+#tvPic{
+    height:340px;
+    width:500px;
+    position:absolute;
+    background-image:url('../imgs/tv.png');
+}
+
+#radioPic{
+    height:340px;
+    width:500px;
+    background-image:url('../imgs/radio.png');
+}
+
+#radioTime{
+    height:400px;
+    width:500px;
+    z-index:2;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-250px;
+    margin-top:-200px;
+}
+
+#closeIt{
+    height:100%;
+    width:100%;
+    z-index:2;
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+}
+
+#tvUitleg{
+    width:500px;
+    left:50%;
+    top:50%;
+    position:absolute;
+    margin-left:-250px;
+    margin-top:-50px;
+    color: black !important;
+    background-color: #152151;
+    border:1px solid black;
+    opacity:0.8;
+    text-align:center;
+    padding:15px;
+} 
+#tvOverlay{
+    height:237px;
+    width:354px;
+    top:50%;
+    left:100%;
+    margin-left:-726px;
+    margin-top:-53px;
+  
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/tv.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicTv{
+    height:237px;
+    width:354px;
+    top:50%;
+    left:50%;
+    margin-left:-726px;
+    margin-top:-53px;
+    transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#radioOverlay{
+    height:93px;
+    width:128px;
+    top:50%;
+    left:50%;
+    margin-left:-75px;
+    margin-top:93px;   
+    
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/radio.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicRadio{
+    height:93px;
+    width:128px;
+    top:50%;
+    left:50%;
+    margin-left:-75px;
+    margin-top:93px;   
+    transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#pbOverlay{
+    height:356px;
+    width:412px;
+    top:0%;
+    left:50%;
+    margin-left:-751px;
+    margin-top:-222px;
+
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/map.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicPb{
+    height:356px;
+    width:412px;
+    top:0%;
+    left:50%;
+    margin-left:-751px;
+    margin-top:-222px;
+    transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#bvOverlay{
+    height:250px;
+    width:143px;
+    top:25%;
+    left:107%;
+    margin-left:6px;
+    margin-top:-223px;
+
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/kalender.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicbv{
+    height:250px;
+    width:143px;
+    top:25%;
+    left:107%;
+    margin-left:6px;
+    margin-top:-223px;
+    transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#dogeOverlay{
+    height:280px;
+    width:210px;
+    top:30%;
+    left:50%;
+    margin-left:505px;
+    margin-top:219px;
+
+    z-index:3;
+    position:absolute;
+
+
+    opacity:0;
+    background-image:url('../imgs/cuts/doge.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+    display: none;
+}
+
+#overPicDoge{
+    height:280px;
+    width:210px;
+    top:30%;
+    left:50%;
+    margin-left:505px;
+    margin-top:219px;
+    transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+    display:none;
+}
+
+#dogeTime{
+    z-index:2;
+    position:absolute;
+    top:15%;
+    left:75%;
+    margin-left:510px;
+    margin-top:220px;
+    border:none;
+    display:none;
+}
+
+#bvTime{
+    height:400px;
+    width:500px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-250px;
+    margin-top:-200px;
+    background-color:black;
+    opacity:0.4;
+    z-index:1;
+}
+
+#tvH2{
+    opacity:1 !important;
+    margin:0px;
+}
+}
+
+/*smartphone*/
+@media all and (max-width: 600px) and (min-width: 320px) {
+
+
+    #calPic{
+    width:400px;
+    z-index:5;
+}
+
+#calPica{
+    height: 600px !important;
+    width: 333px !important;
+    left: 50%;
+    top: 20% !important;
+    border: 1px solid black;
+    margin-top: -150px;
+    margin-left: -313px;
+    position: absolute;
+    z-index:2;
+}
+
+#calPicFun{
+    height: 129px;
+    width: 124px;
+    top: 50%;
+    left: 50%;
+    margin-left: -329px;
+    margin-top: 83px;
+    z-index: 3;
+    position: absolute;
+    opacity: 100 !important;
+    background-image: url('../imgs/cuts/date.png');
+    border: none;
+    cursor: pointer;
+    transform: scale(0.51);
+    transition: transform .25s ease;
+    border:none;
+}
+#calPicFun:focus{
+    outline:0;
+}
+
+    .overlay{
+    position: absolute;
+    z-index:2;
+    left:0px;
+}
+
+.underlay{
+    z-index:1;
+    position: relative;
+    left:0px;
+    display:inline-block;
+}
+
+#fullpage{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+
+p {
+    font-size:0.5em;
+    color:white;
+    margin:15px;
+}
+
+h1 {
+    font-size: 8em;
+    color:white;
+    margin:0 0 0 0;
+    top:0px;
+    height:100%;
+    width:100%;
+    text-align: center;
+    line-height: 100%;
+}
+
+h2 {
+    color:white;
+    height:100%;
+    width:100%;
+    margin-top:5%;
+    text-align: center;
+    text-align:100%;
+
+}
+
+#aside{
+    position:absolute;
+    bottom:0%;
+    display:none;
+}
+
+
+#introBanner{
+    top:75%;
+    height:240px;
+    width:100%;
+    background-image:url('../imgs/amflag.jpg');
+    background-position: center;
+    border:1px solid black;
+    position:relative;
+}
+
+
+  #artH1 {
+    font-size:5em;
+  }
+  #artH2{
+    font-size:0.8em;
+  }
+
+      #map{
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    position:absolute;
+    background-position: center center;
+}
+
+#tvPage{
+    height:457px;
+    width:633px;
+    z-index:1;
+    top:50%;
+    left:100%;
+    margin-top:-228px;
+    margin-left:-316px;
+    position:relative;
+    background-position: center center;
+    display:none;
+}
+
+#tvTime{
+    height:400px;
+    width:500px;
+    z-index:3;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-210px;
+    margin-top:-120px;
+    display:none;
+}
+
+#tvTimeVid{
+    height:240px;
+    width:320px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-210px;
+    margin-top:-120px;
+    z-index:-1;
+
+    display:none;
+}
+
+
+#tvPic{
+    height:340px !important;
+    width:120% !important;
+    position:absolute;
+    background-image:url('../imgs/tv.png');
+}
+
+#radioPic{
+    height:340px !important;
+    width:500px !important;
+    background-image:url('../imgs/radio.png');
+}
+
+#radioTime{
+    height:200px !important;
+    width:300px !important;
+    z-index:2;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-250px;
+    margin-top:-200px;
+}
+
+#closeIt{
+    height:100%;
+    width:100%;
+    z-index:2;
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+}
+
+#tvUitleg{
+    width:500px;
+    left:50%;
+    top:50%;
+    position:absolute;
+    margin-left:-250px !important;
+    margin-top:-50 !important;
+    color: black !important;
+    background-color: #152151;
+    border:1px solid black;
+    opacity:0.8;
+    text-align:center;
+    padding:15px;
+} 
+#tvOverlay{
+    height:100px !important;
+    width:150px !important;
+    top:140% !important;
+    left:65% !important;
+    margin-left:-171px !important;
+    margin-top:-200px !important;
+  
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/tv.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicTv{
+    height:100px !important;
+    width:150px !important;
+    top:140% !important;
+    left:65% !important;
+    margin-left:-171px !important;
+    margin-top:-200px !important;
+    transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#radioOverlay{
+    height:93px;
+    width:128px;
+    top:50%;
+    left:50%;
+    margin-left:-75px;
+    margin-top:93px;   
+    
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/radio.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicRadio{
+    height:93px;
+    width:128px;
+    top:50%;
+    left:50%;
+    margin-left:-75px;
+    margin-top:93px;   
+    transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#pbOverlay{
+    height:280px !important;
+    width:350px !important;
+    top:26% !important;
+    left:140% !important;
+    margin-left:-751px;
+    margin-top:-222px;
+
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/map.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicPb{
+    height:280px !important;
+    width:350px !important;
+    top:26% !important;
+    left:140% !important;
+    margin-left:-751px;
+    margin-top:-222px;
+    transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#bvOverlay{
+    height:250px;
+    width:143px;
+    top:112% !important;
+    left:60% !important;
+    margin-left:6px;
+    margin-top:-223px;
+
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/kalender.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicbv{
+    height:250px;
+    width:143px;
+    top:112% !important;
+    left:60% !important;
+    margin-left:6px;
+    margin-top:-223px;
+    transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#dogeOverlay{
+    height:280px;
+    width:210px;
+    top:30%;
+    left:50%;
+    margin-left:505px;
+    margin-top:219px;
+
+    z-index:3;
+    position:absolute;
+
+
+    opacity:0;
+    background-image:url('../imgs/cuts/doge.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+    display: none;
+}
+
+#overPicDoge{
+    height:280px;
+    width:210px;
+    top:30%;
+    left:50%;
+    margin-left:505px;
+    margin-top:219px;
+    transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+    display:none;
+}
+
+#dogeTime{
+    z-index:2;
+    position:absolute;
+    top:15%;
+    left:75%;
+    margin-left:510px;
+    margin-top:220px;
+    border:none;
+    display:none;
+}
+
+#bvTime{
+    height:400px;
+    width:500px;
+    position:absolute;
+    top:45% !important;
+    left:72% !important;
+    margin-left:-250px;
+    margin-top:-200px;
+    background-color:black;
+    opacity:0.4;
+    z-index:2 !important;
+    opacity: 100 !important;
+}
+
+#tvH2{
+    opacity:1 !important;
+    margin:0px;
+    font-size:0.75em;
+}
+#gangH2{
+    font-size: 0.75em;
+}
+
+#notebook{
+    height:600px;
+    width:350px;
+    left:80%;
+    top:80%;
+    margin-left:-175px;
+    margin-top:49px;
+
+    position:absolute;
+    z-index:1;
+
+    opacity:1;
+    cursor: pointer;
+
+    transition:opacity 2s;
+}
+
+#notebook:hover{
+    height:600px;
+    width:350px;
+    left:80%;
+    top:80%;
+    margin-left:-175px;
+    margin-top:-430px !important;
+
+    position:absolute;
+    z-index:1;
+
+    opacity:1;
+    cursor: pointer;
+
+    transition:margin-top 1s;
+}
+
+#logo{
+    height:100px;
+    left: 0%;
+    margin-left: -50px;
+    top: -25px;
+    display:none;
+}
+
+#tvTime{
+    margin-left:50%
+
+}
+
+}
+                            /*  PAGE   */
+*{
+    margin:0 0;
+    border:0 0;
+}
+
+body {
+    background: #152151;
+    overflow:hidden;
+
+}
+a{
+    margin:0;
+    padding:0;
+    color:grey;
+}
+*{
+    cursor: url('../imgs/magnifying.ico'), default;
+}
+
+
+/* Change the white to any color ;) source : http://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete */
+input{
+  background-color: rgba(0,0,0,0); // red, green, blue, alpha
+}
+
+.help{
+    background-color: none !important;
+    outline:0;
+}
+
+.overlay{
+    position: absolute;
+    z-index:2;
+    left:0px;
+}
+
+.underlay{
+    z-index:1;
+    position: relative;
+    left:0px;
+    display:inline-block;
+}
+
+#fullpage{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+
+p {
+    font-size:1em;
+    color:white;
+    margin:15px;
+}
+
+h1 {
+    font-size: 8em;
+    color:white;
+    margin:0 0 0 0;
+    top:0px;
+    height:100%;
+    width:100%;
+    text-align: center;
+    line-height: 100%;
+}
+
+h2 {
+    color:white;
+    height:100%;
+    width:100%;
+    margin-top:5%;
+    text-align: center;
+    text-align:100%;
+
+}
+
+
+video{
+    height:100%;
+    width:100%;
+}
+#fullpage{
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    background-position: center center;
+}
+.overlay{
+    position:absolute;
+    z-index:10;
+}
+
+#banner {
+    left:87.5%;
+    width:12.49%;
+    height: 50px;
+    background: #130B34;
+    top:25px;
+    border:solid 1px black;
+    box-shadow:0px 0px 10px 0px rgba(0,0,0,0.82);
+}
+
+#skip{
+    height:100%;
+    width:100px;
+    margin-left: -100px;
+    left:100%;
+}
+
+#logo{
+    height:100px;
+    left: 0%;
+    margin-left: -50px;
+    top: -25px;
+}
+
+#article{
+    height:100%;
+    width:100%;
+}
+                                  /* END OF GLOBAL */
+                                 /* BEGIN OF BEGIN */
+#aside{
+    position:absolute;
+    bottom:0%;
+}
+
+#introBanner{
+    top:75%;
+    height:240px;
+    width:100%;
+    background-image:url('../imgs/amflag.jpg');
+    background-position: center;
+    border:1px solid black;
+    position:relative;
+}
+
+#enterPage {
+    left:50%;
+    margin-left:-160px;
+    height:320px;
+    width:320px;
+    top:-40px;
+    opacity:0.7;
+    transition:opacity 1s;
+    transition: transform .25s ease;
+
+}
+
+#enterPage:hover{
+    transition:opacity 1s;
+    transition: transform .25s ease;
+}
+
+#enterPage:focus{
+    outline:0;
+}
+
+#artText{
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+                                    /*   END OF BEGIN  */
+                                    /*  HALLWAYYYYY  */
+.hallway{
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    background-position: center center;
+}
+
+#gangUitleg{
+    width:500px;
+    left:50%;
+    top:50%;
+    position:absolute;
+    margin-left:-250px;
+    margin-top:-50px;
+    color: black !important;
+    background-color: #152151;
+    border:1px solid black;
+    opacity:0.8;
+    text-align:center;
+    padding:15px;
+} 
+
+#gangH2{
+    opacity:1 !important;
+    margin:0px;
+}
+
+#notebook{
+    height:600px;
+    width:350px;
+    left:80%;
+    top:80%;
+    margin-left:-175px;
+    margin-top:0px;
+
+    position:absolute;
+    z-index:1;
+
+    opacity:1;
+    cursor: pointer;
+
+    transition:opacity 2s;
+}
+
+#notebook:hover{
+    height:600px;
+    width:350px;
+    left:80%;
+    top:80%;
+    margin-left:-175px;
+    margin-top:-350px;
+
+    position:absolute;
+    z-index:1;
+
+    opacity:1;
+    cursor: pointer;
+
+    transition:margin-top 1s;
+}
+
+#next{
+    height:66px;
+    width:307px;
+    left:50%;
+    top:80%;
+    margin-left:-153px;
+    margin-top:-4px;
+
+    position:absolute;
+    z-index:1;
+
+    background-image: url('../imgs/walk-button.png');
+    opacity:0.9;
+    cursor: pointer;
+    border:none;
+}
+
+#next:focus{
+    outline:none;
+}
+
+#door{
+    height:464px;
+    width:428px;
+    left:50%;
+    top:50%;
+    margin-left:-245px;
+    margin-top:-354px;
+    transition: transform .25s ease;
+    position:absolute;
+    z-index:3;
+    cursor: pointer;
+    border:none;
+}
+
+#door:focus{
+    outline:none;
+}
+
+
+#quizknop:focus{
+    outline:none;
+}
+                                /*  END OF HALLWAYSYSYSYSYS  */
+                                    /*  Livingroom Page */
+#map{
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    position:absolute;
+    background-position: center center;
+}
+
+#tvPage{
+    height:457px;
+    width:633px;
+    z-index:1;
+    top:50%;
+    left:50%;
+    margin-top:-228px;
+    margin-left:-316px;
+    position:relative;
+    background-position: center center;
+}
+
+#tvTime{
+    height:400px;
+    width:500px;
+    z-index:3;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-250px;
+    margin-top:-200px;
+}
+
+#tvTimeVid{
+    height:240px;
+    width:320px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-210px;
+    margin-top:-120px;
+    z-index:-1;
+}
+
+
+#tvPic{
+    height:340px;
+    width:500px;
+    position:absolute;
+    background-image:url('../imgs/tv.png');
+}
+
+#radioPic{
+    height:340px;
+    width:500px;
+    background-image:url('../imgs/radio.png');
+}
+
+#calPic{
+    width:800px;
+    z-index:5;
+}
+
+#calPica{
+    height: 635px;
+    width: 685px;
+    left: 50%;
+    border: 1px solid black;
+    margin-top: -150px;
+    margin-left: -313px;
+    position: absolute;
+    z-index:2;
+}
+
+#calPicFun{
+    height: 129px;
+    width: 124px;
+    top: 50%;
+    left: 50%;
+    margin-left: -329px;
+    margin-top: 83px;
+    z-index: 3;
+    position: absolute;
+    opacity: 1;
+    background-image: url('../imgs/cuts/date.png');
+    border: none;
+    cursor: pointer;
+    transform: scale(0.51);
+    transition: transform .25s ease;
+    border:none;
+}
+#calPicFun:focus{
+    outline:0;
+}
+#radioTime{
+    height:400px;
+    width:500px;
+    z-index:2;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-250px;
+    margin-top:-200px;
+}
+
+#closeIt{
+    height:100%;
+    width:100%;
+    z-index:2;
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+}
+
+#tvUitleg{
+    width:500px;
+    left:50%;
+    top:50%;
+    position:absolute;
+    margin-left:-250px;
+    margin-top:-50px;
+    color: black !important;
+    background-color: #152151;
+    border:1px solid black;
+    opacity:0.8;
+    text-align:center;
+    padding:15px;
+} 
+#tvOverlay{
+    height:237px;
+    width:354px;
+    top:50%;
+    left:50%;
+    margin-left:-726px;
+    margin-top:-53px;
+  
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/tv.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicTv{
+    height:237px;
+    width:354px;
+    top:50%;
+    left:50%;
+    margin-left:-726px;
+    margin-top:-53px;
+	transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#radioOverlay{
+    height:93px;
+    width:128px;
+    top:50%;
+    left:50%;
+    margin-left:-75px;
+    margin-top:93px;   
+    
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/radio.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicRadio{
+    height:93px;
+    width:128px;
+    top:50%;
+    left:50%;
+    margin-left:-75px;
+    margin-top:93px;   
+    transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#pbOverlay{
+    height:356px;
+    width:412px;
+    top:0%;
+    left:50%;
+    margin-left:-751px;
+    margin-top:-222px;
+
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/map.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicPb{
+    height:356px;
+    width:412px;
+    top:0%;
+    left:50%;
+    margin-left:-751px;
+    margin-top:-222px;
+	transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#bvOverlay{
+    height:250px;
+    width:143px;
+    top:25%;
+    left:107%;
+    margin-left:6px;
+    margin-top:-223px;
+
+    z-index:3;
+    position:absolute;
+
+    opacity:0;
+    background-image:url('../imgs/cuts/kalender.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicbv{
+    height:250px;
+    width:143px;
+    top:25%;
+    left:107%;
+    margin-left:0px;
+    margin-top:-225px;
+	transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#dogeOverlay{
+    height:280px;
+    width:210px;
+    top:30%;
+    left:50%;
+    margin-left:505px;
+    margin-top:219px;
+
+    z-index:3;
+    position:absolute;
+
+
+    opacity:0;
+    background-image:url('../imgs/cuts/doge.png');
+    background-color:none !important;
+
+    border:none;
+    cursor: pointer;
+}
+
+#overPicDoge{
+    height:280px;
+    width:210px;
+    top:30%;
+    left:50%;
+    margin-left:506px;
+    margin-top:219px;
+	transition: transform .25s ease;
+    z-index:2;
+    position:absolute;
+}
+
+#dogeTime{
+    z-index:2;
+    position:absolute;
+    top:15%;
+    left:75%;
+    margin-left:510px;
+    margin-top:220px;
+    border:none;
+}
+
+#tvH2{
+    opacity:1 !important;
+    margin:0px;
+}
+
+                        /*  EINDE TV KAMER */
+                        /*  FUN page        */
+
+#funPage{
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    position:absolute;
+    background-position: center center;
+    background-image:url('../imgs/funeralBG.png');
+}
+
+#funVidDiv{
+    height:300px;
+    width:400px;
+    top:25px;
+    left:25px;
+    margin-left:0;
+    margin-top:0;
+  
+    z-index:3;
+    position:absolute;
+
+    border:1px solid black;
+    cursor: pointer;
+}
+#funVid{
+
+}
+
+#funTextDiv{
+    width:500px;
+    left:50%;
+    top:50%;
+    position:absolute;
+    margin-left:-250px;
+    margin-top:-50px;
+    color: black !important;
+    background-color: #152151;
+    border:1px solid black;
+    opacity:0.8;
+    text-align:center;
+    padding:10px;
+} 
+
+#textH2{
+    opacity:1 !important;
+    margin:0px;
+}
+                        /*         END OF FUN         */
+
+#actionEvent{
+    z-index:2;
+    height:100px;
+    width:100px;
+    top:100%;
+    left:100%;
+    margin-left:-100px;
+    margin-top:-100px;
+    position:absolute;
+}
+
+#fadeTo{
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    color:black;
+    background-color:black;
+    opacity:1;
+    position:absolute;
+    z-index:13;
+
+}
+
+#temp{
+    height:400px;
+    width:100%;
+    top:50%;
+    margin-top:-200px
+    z-index:50;
+    position:absolute;
+}
+
+#temp2{
+    height:400px;
+    width:100%;
+    top:50%;
+    margin-top:-200px
+    z-index:51;
+    color:blue;
+    position:absolute;
+}
+
+#tempH2{
+    height:25%;
+    width:100%;
+    top:50%;
+    margin-top:-12.7%;
+    z-index:51;
+    position:absolute;
+}
+
+
