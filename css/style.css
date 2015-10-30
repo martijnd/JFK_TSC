@@ -404,6 +404,7 @@ h2 {
     position:absolute;
     bottom:0%;
     display:none;
+
 }
 
 
@@ -887,8 +888,11 @@ video{
                                   /* END OF GLOBAL */
                                  /* BEGIN OF BEGIN */
 #aside{
-    position:absolute;
-    bottom:0%;
+    position:relative;
+    top:15%;
+    text-align:center;
+    margin:auto;
+
 }
 
 #introBanner{
@@ -992,7 +996,7 @@ video{
 }
 
 #next{
-    height:67px;
+    height:72px;
     width:307px;
     left:50%;
     top:80%;

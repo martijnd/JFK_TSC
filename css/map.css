@@ -1,71 +1,63 @@
 /* Style for our header texts
     * --------------------------------------- */
-    h1{
-        font-size: 5em;
-        font-family: arial,helvetica;
-        color: #fff;
-        margin:0;
-        padding:0;
-    }
+h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+}
 
-    /* Centered texts in each section
-    * --------------------------------------- */
-    .section{
-        text-align:center;
-        overflow: hidden;
-    }
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align:center;
+    overflow: hidden;
+}
 
-    videomap{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        top:0;
-        right:0;
-        width: 100%;
-        height: 100%;
-        background-size: 100% 100%;
-        background-color: black; /* in case the video doesn't fit the whole page*/
-        background-position: center center;
-        background-size: contain;
-        object-fit: cover; /*cover video background */
-        z-index:3;
-    }
+videomap{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; /*cover video background */
+    z-index:3;
+}
 
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+#section0 #section1 .section{
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 43%;
+}
 
+/*solves problem with overflowing video in Mac with Chrome */
+#section0 {
+    overflow: hidden;
+}
 
-    /* Layer with position absolute in order to have it over the video
-    * --------------------------------------- */
-    #section0 #section1 .section{
-        position: absolute;
-        z-index: 4;
-        width: 100%;
-        left: 0;
-        top: 43%;
-    }
-
-    /*solves problem with overflowing video in Mac with Chrome */
-    #section0{
-        overflow: hidden;
-    }
-
-    #   #section0{
-        overflow: hidden;
-    }
+#section0 {
+    overflow: hidden;
+}
 
 
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+    color: #fff;
+}
 
-
-    /* Bottom menu
-    * --------------------------------------- */
-    #infoMenu li a {
-        color: #fff;
-    }
-
-
-
-
-
-.buttonText{
+.buttonText {
     color:red;
     font-size: 25px;
     text-align: right;
@@ -79,8 +71,7 @@
                                                         /*BUTTONS*/
 #buttonHide{
     display: block;
-    margin: auto;
-   
+    margin: auto; 
 }
 
 .buttonMap{
@@ -90,15 +81,12 @@
     padding: 4em;
     width: 10%;
     height: 20%;
-
-
-
 }
 
 .buttonMap:focus{
     outline:none;
-
 }
+
 .buttonMap:hover{
     cursor: pointer;
 }
@@ -108,14 +96,13 @@
     top: 20%;
     left: 46%;
     transform: rotate(3deg);
- }
+}
 
 #button2{
     background: url(../imgs/1st.png) no-repeat center center; 
     top: 52%;
     left: 27%;
     transform: rotate(2deg);
-
 }
 
 #button3{
@@ -123,7 +110,6 @@
     top: 61%;
     left: 40%;
     transform: rotate(-2deg);
-
 }
 
 #button4{
@@ -132,18 +118,14 @@
     top: 67%;
     left: 53%;
     transform: rotate(2deg);
-
 }
 
 #button5{
     background: url(../imgs/lee-icon.png) no-repeat center center; 
     top: 45%;
     left: 15%;
-   transform: rotate(-5deg);
-
+    transform: rotate(-5deg);
 }
-
-
 
 #button6{
     background: url(../imgs/back-icon.png) no-repeat center center; 
@@ -152,8 +134,6 @@
     transform: rotate(-4deg);
     position: absolute;
     z-index: 1;
-
-
 }
 
 #button7{
@@ -163,8 +143,6 @@
     z-index: 9999;
     transform: rotate(5deg);
     display: none;
-
-
 }
 
 #buttonClose{
@@ -187,10 +165,9 @@
     position: relative;
     display: block;
     margin-top: -70%;
-        border: 14px solid #fff;
+    border: 14px solid #fff;
     box-shadow: 0px 15px 24px #3B3B3B;
     border-bottom: 9em solid #fff;  
-
 }
 
 /*                                                      MAP     */
@@ -203,9 +180,7 @@
       -o-background-size: cover;
       background-size: cover;
       max-width:100%;
-
 }
-
 
 #mapInfo{
     background-color: #000;
@@ -215,7 +190,6 @@
     position: absolute;
     z-index: 2;
     opacity:0.7;
-
 }
 
 #mapText{
@@ -223,7 +197,6 @@
     padding-top: 15%;
     height: 100%;
     font-size: 3.5em;
-
 }
 
 
@@ -234,7 +207,7 @@
     width: 50%;
     height: 56%;
     position: absolute;
-    font-family: 'Inconsolata', cursive;
+    font-family: 'Shadows Into Light', cursive;
     color: #555;
 }
 
@@ -243,7 +216,6 @@
     width: 100%;
     background-color: #EFEC53;
     position: absolute;
-
 }
 
 #text{
@@ -262,13 +234,11 @@
 }
 
 #text > span > p {
-
     color: #000;
     margin-left: -60px;
-    margin-top: 10%;
+    margin-top: 55%;
     position: relative;
     transform: rotate(-2deg);
-
 }
 
 .description{
@@ -281,9 +251,7 @@
     width: 11%;
     box-shadow : 0px 10px 20px #000;
     font-weight: bold;
-
 }
-
 
 #displayNames{
 
@@ -291,10 +259,7 @@
     position: absolute;
     left: 6%;
     top: 13%;
-        transform: rotate(-15deg);
-
-
-
+    transform: rotate(-15deg);
 }
 
 .display{
@@ -316,8 +281,6 @@
     font-weight: bold;
 }
 
-
-
 #backToRoom > p{
     margin-top: -1px;
 }
@@ -328,9 +291,7 @@
 #funeralDescription{
     right: 4%;
     top: 45%;
-      transform: rotate(9deg);
-
-  
+    transform: rotate(9deg);
 }
 
 
@@ -356,16 +317,15 @@
 }
 
 #oswald{
-         border: 14px solid #fff;
+    border: 14px solid #fff;
     box-shadow: 0px 15px 24px #3B3B3B;
     border-bottom: 9em solid #fff;  
+    margin-top: 40%;
 }
 
 .buttonText{
     display: none;
 }
-
-
 
 .main {
   
@@ -381,8 +341,7 @@ button{
     position: absolute;
 }
 
-
-    .buttonText{
+.buttonText{
     display: block;
     color: #fff;
     z-index: 99999;
@@ -390,29 +349,29 @@ button{
     text-align: left;
     left: 0.5em;
     top: 0;
-    font-family: 'Inconsolata', bold;
+    font-family: 'Shadows Into Light', bold;
     font-size: 1.5em;
+}
 
-    }
-
-button{
+button {
     position: absolute;
 }
 
 @media screen and (max-width: 480px) { 
 
     #funeralDescription{
-    display: none;
-}
+        display: none;
+    }
+        
     .buttonMap{
         height: 0;
         position: absolute;
         display: block;
     }
 
-     #displayNames {
+    #displayNames {
         display:none;
-     }
+    }
 
     .buttonMap{
         height: 0;
@@ -424,9 +383,6 @@ button{
         left: 36%;
         transform: none;
     }
-
-
- 
 
     #button2{
         transform: none;

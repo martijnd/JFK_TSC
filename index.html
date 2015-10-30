@@ -1,153 +1,128 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-
-	<head>
-		<meta charset="UTF-8">
-		<meta name="description" content="John F Kennedy Assassination Investigation">
-		<meta name="keywords" content="JFK, Interactive, Responsive">
-		<meta name="author" content="Groep B">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>The Sworn Commitment of John F. Kennedy</title>
-		<link rel="icon" type="image/x-icon" href="imgs/favicon.ico" />
-		<link href='https://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
-		<link rel='stylesheet' media='screen and (min-width: 300px)' href='css/style.css' />
-		<link rel="stylesheet" type="text/css" href="css/map.css" />
-
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-
-	</head>
-	
-	<body>
-		<div id="fullpage">
-
-			<div id="fadeTo"></div>
-			<input id='closeIt'>
-			
-				<!-- intro -->
-				<article id="article">
-					<div id="artText" class="underlay">
-						<h1 id="artH1"></h1>
-						<div id="artSpace"></div>
-						<h2 id="artH2"></h2>
-					</div>
-				</article>
-
-				<!-- Text under logo -->
-				<aside id="introBanner" class="underlay">
-					<input id="enterPage" class="overlay" type="image" src="imgs/sealbutton.png" alt="seal" />
-				</aside>
-
-				<!-- Page 1 -->
-				<article class='hallway' id='hallway'>
-					<div id='notepad'>
-						<img id='notebook' alt='notebook' src='imgs/notebook.png'/>
-						</div>
-					<input id='next'/>
-					<div id='gangUitleg'>
-						<h2 id='gangH2'></h2>
-					</div>
-					<div class='hallway' id='hallway1'></div>
-					<div class='hallway' id='hallway2'>
-						<img id='door' alt='door' src='imgs/gang/door.png'/>
-					</div>
-				</article>
-
-				<!-- Page 2--> 
-				<article id="tvPage">
-					<div id='tvUitleg'>	
-						<h2 id='tvH2'></h2>
-					</div>
-					<input class='help' id="radioOverlay"><img id='overPicRadio' alt='Radio' src='imgs/cuts/radio.png'/>
-					<input class='help' id="tvOverlay"><img id='overPicTv' alt='Tv' src='imgs/cuts/tv.png'/>
-					<input class='help' id="pbOverlay"><img id='overPicPb' alt='map' src='imgs/cuts/map.png'/>
-					<input class='help' id="bvOverlay"><img id='overPicbv' alt='kalender' src='imgs/cuts/kalender.png'/>
-					<input class='help' id="dogeOverlay"><img id='overPicDoge' alt='doge' src='imgs/cuts/doge.png'/>
-					<div id="radioTime">
-						<div id='radioPic'></div>
-					</div>
-					<img id='dogeTime' alt='wow' src='imgs/wolkje.png'/>
-					<div id="tvTime">
-						<div id='tvPic'></div>
-					</div>
-					<div id='bvTime'>
-						<div id='calPic'>
-							<img alt='kalender' id='calPica' src='imgs/kalender2.png' />
-							<input id='calPicFun'/>
-						</div>
-					</div>
-				</article>
-
-				<!-- Page 3 -->
-				<article id='map' class='map'>
-					<div id="mapInfo"><h2 id="mapText">You run over the facts one more time.</h2></div>
-				<!--Description pop-up for buttons-->
-				<div class="description"></div>
-				<!--Motorcade button-->
-				<div class="buttonShowWrap">
-					<button class="buttonMap" id="button1">
-					</button>
-				</div>
-				<!--Shot 1-->
-				<div class="buttonShowWrap">
-					<button class="buttonMap" id="button2">
-					</button>
-					
-				</div>
-				<!--Shot 2-->
-				<div class="buttonShowWrap">
-					<button class="buttonMap" id="button3">
-					</button>
-				</div>
-				<!--Shot 3-->
-				<div class="buttonShowWrap">
-					<button class="buttonMap" id="button4">
-					</button>
-				</div>
-				<!--Oswald-->
-				<div class="buttonShowWrap">
-					<button class="buttonMap" id="button5">
-					</button>
-					<button class="display" id="displayNames"></button>
-					<button class="display" id="back"></button>
-					
-				</div>
-				<!--Funeral-->
-				<div class="buttonShowWrap">
-					<button class="buttonMap" id="button6">
-					</button>
-					<div class="display" id="funeralDescription">
-						 <div class="yellowBar"></div>
-					</div>
-												<!--Back to Room-->
-					<div class="buttonShowWrap">
-						<button class="buttonMap" id="button7">
-						</button>
-					</div>
-					</div>
-					
-					<!-- Display Names Button-->
-					<p></p>
-					
-					<div id="overlay">
-						<div class="yellowBar"></div>
-						<div id="videomap"></div>
-						<div id="text"></div>
-						<div id="image"></div>
-					</div>
-				</article>
-				<article id='funPage'>
-					<div id='funVidDiv'></div>
-					<div id='funTextDiv'>
-						<h2 id='textH2'></h2>
-					</div>
-				</article>
-				<aside id='aside'>
-					<p>&copy;opyright B-Groep, ipmedt2, 2015. Disclaimer: This website is best viewed on a screen with a resolution higher than 1280x1024. Click <a href='docs/bronvermelding.txt'>here</a> to download the citation list.</p>
-				</aside>
-		</div>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta content="John F Kennedy Assassination Investigation" name=
+    "description">
+    <meta content="JFK, Interactive, Responsive" name="keywords">
+    <meta content="Groep B" name="author">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>The Sworn Commitment of John F. Kennedy</title>
+    <link href="imgs/favicon.ico" rel="icon" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Mr+Dafoe' rel=
+    'stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel=
+    'stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel=
+    'stylesheet' type='text/css'>
+    <link href='css/style.css' media='screen and (min-width: 300px)' rel=
+    'stylesheet'>
+    <link href="css/map.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js" type="text/javascript">
+    </script>
+    <script src="js/main.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div id="fullpage">
+        <div id="fadeTo"></div><input id='closeIt'> <!-- intro -->
+        <article id="article">
+            <div class="underlay" id="artText">
+                <h1 id="artH1"></h1>
+                <div id="artSpace"></div>
+                <h2 id="artH2"></h2>
+            </div>
+        </article><!-- Text under logo -->
+        <aside class="underlay" id="introBanner">
+            <input alt="seal" class="overlay" id="enterPage" src=
+            "imgs/sealbutton.png" type="image">
+        </aside><!-- Page 1 -->
+        <article class='hallway' id='hallway'>
+            <div id='notepad'><img alt='notebook' id='notebook' src=
+            'imgs/notebook.png'></div><input id='next'>
+            <div id='gangUitleg'>
+                <h2 id='gangH2'></h2>
+            </div>
+            <div class='hallway' id='hallway1'></div>
+            <div class='hallway' id='hallway2'><img alt='door' id='door' src=
+            'imgs/gang/door.png'></div>
+        </article><!-- Page 2-->
+        <article id="tvPage">
+            <div id='tvUitleg'>
+                <h2 id='tvH2'></h2>
+            </div><input class='help' id="radioOverlay"><img alt='Radio' id=
+            'overPicRadio' src='imgs/cuts/radio.png'> <input class='help' id=
+            "tvOverlay"><img alt='Tv' id='overPicTv' src='imgs/cuts/tv.png'>
+            <input class='help' id="pbOverlay"><img alt='map' id='overPicPb'
+            src='imgs/cuts/map.png'> <input class='help' id=
+            "bvOverlay"><img alt='kalender' id='overPicbv' src=
+            'imgs/cuts/kalender.png'> <input class='help' id=
+            "dogeOverlay"><img alt='doge' id='overPicDoge' src=
+            'imgs/cuts/doge.png'>
+            <div id="radioTime">
+                <div id='radioPic'></div>
+            </div><img alt='wow' id='dogeTime' src='imgs/wolkje.png'>
+            <div id="tvTime">
+                <div id='tvPic'></div>
+            </div>
+            <div id='bvTime'>
+                <div id='calPic'>
+                    <img alt='kalender' id='calPica' src='imgs/kalender2.png'>
+                    <input id='calPicFun'>
+                </div>
+            </div>
+        </article><!-- Page 3 -->
+        <article class='map' id='map'>
+            <div id="mapInfo">
+                <h2 id="mapText">You run over the facts one more time.</h2>
+            </div><!--Description pop-up for buttons-->
+            <div class="description"></div><!--Motorcade button-->
+            <div class="buttonShowWrap">
+                <button class="buttonMap" id="button1"></button>
+            </div><!--Shot 1-->
+            <div class="buttonShowWrap">
+                <button class="buttonMap" id="button2"></button>
+            </div><!--Shot 2-->
+            <div class="buttonShowWrap">
+                <button class="buttonMap" id="button3"></button>
+            </div><!--Shot 3-->
+            <div class="buttonShowWrap">
+                <button class="buttonMap" id="button4"></button>
+            </div><!--Oswald-->
+            <div class="buttonShowWrap">
+                <button class="buttonMap" id="button5"></button> <button class=
+                "display" id="displayNames"></button> <button class="display"
+                id="back"></button>
+            </div><!--Funeral-->
+            <div class="buttonShowWrap">
+                <button class="buttonMap" id="button6"></button>
+                <div class="display" id="funeralDescription">
+                    <div class="yellowBar"></div>
+                </div><!--Back to Room-->
+                <div class="buttonShowWrap">
+                    <button class="buttonMap" id="button7"></button>
+                </div>
+            </div><!-- Display Names Button-->
+            <p></p>
+            <div id="overlay">
+                <div class="yellowBar"></div>
+                <div id="videomap"></div>
+                <div id="text"></div>
+                <div id="image"></div>
+            </div>
+        </article>
+        <article id='funPage'>
+            <div id='funVidDiv'></div>
+            <div id='funTextDiv'>
+                <h2 id='textH2'></h2>
+            </div>
+        </article>
+        <aside id='aside'>
+            <p>&copy; Copyright B-Groep, ipmedt2, 2015. Disclaimer: This website
+            is best viewed on a screen with a resolution higher than 1280x1024.
+            Click <a href='docs/bronvermelding.txt'>here</a> to download the
+            citation list.</p>
+        </aside>
+    </div>
+</body>
 </html>
-		
