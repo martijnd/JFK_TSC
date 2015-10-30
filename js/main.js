@@ -632,7 +632,7 @@ function funeral(){
 
 	//uitleg biiishhh
 	$("#funTextDiv").fadeIn(2000);
-	$("#textH2").html("Today is 25-11-1963");
+	$("#textH2").html("Today is November 25, 1963");
 	$("#closeIt").click(function(){
 		console.log("Click "+ closeItClick);
 		closeItClick = closeItClick + 1;
