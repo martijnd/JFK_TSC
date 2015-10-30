@@ -351,7 +351,7 @@ function livingroom(){
 		},
 		function(){
 			$("#dogeTime").fadeOut(500);
-			$("#overPicDoge").css("transform", "scale(1)");
+			$("#overPicDoge").css("transform", "scale(1.075)");
 		});
 
 	//Als je over de kalender hovert
