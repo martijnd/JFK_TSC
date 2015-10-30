@@ -233,8 +233,8 @@ function livingroom(){
 	$("#tvPic").append('<video id="tvTimeVid"></video>');
 	$("#radioPic").append('<audio id="radioTimeAud"></audio>');
 	
-	$("#tvTimeVid").append('<source src="Video/videoZap.mp4" type="video/mp4"></source> <source src="Video/videoZap.webm" type="video/webm"></source>');
-	$("#radioTimeAud").append('<source src="Audio/radioPres.mp3" type="audio/mp3"></source> <source src="Audio/radioPres.webm" type="video/webm"></source>');	
+	$("#tvTimeVid").append('<source src="Video/videoZap.mp4" type="video/mp4"></source>');
+	$("#radioTimeAud").append('<source src="Audio/radioPres.mp3" type="audio/mp3"></source>');	
 
 		//tijd voor een beetje uitleg
 	$("#tvUitleg").fadeIn(2000);
@@ -474,7 +474,7 @@ function map(){
 
 	$("#text").html("<span><p>John F. Kennedy arrived in Dallas at the airfield on 11:38 AM. <br>From there he got into the presidential limousine. He was accompanied by Mrs. Kennedy, Texas Governor Connally and Mrs. Connally. The motorcade had to cover ten miles of crowded streets. Almost 150.000 people came to watch the president drive by that day. <br><br>On the right you can see the route the motorcade took. At 12:21 PM, the motorcade turned onto Main Street. Paired with loud cheering, the motorcade turned left onto Elm Street at 12:29.</p></span>").css("text-align", "left").css("display", "block").css("color","black").css("float", "left").css("width", "25%").css("margin-left", "10%");
 
-	$("#image").html("<video id='kaartVideo1' class='video'>source src='Video/video6.mp4' type='video/mp4'></source> <source src='Video/video6.webm' type='video/webm'></source></video>").css("width", "25%").css("margin-left", "auto").css("margin-right", "auto");
+	$("#image").html("<video id='kaartVideo1' class='video'>source src='Video/video6.mp4' type='video/mp4'></source></video>").css("width", "25%").css("margin-left", "auto").css("margin-right", "auto");
 		var vid = document.getElementById("kaartVideo1");
 		vid.play();
 		console.log("playing video");
@@ -490,7 +490,7 @@ $("#video").html("<span><h2>The First Shot</h2></span>");
 
 $("#text").html("<span><p>At approximately 12:29, the first shot was fired. However, It didn't hit the president or the other passengers of the presidential limousine. The bullet was never found but almost all of the testimonials from the bystanders confirmed the sound of three shots, not two.</p></span>");
 
-$("#image").html("<video id='kaartVideo1' class='video'><source src='Video/GunShot1.mp4' type='video/mp4'></source> <source src='Video/GunShot1.webm' type='video/webm'></source></video>").css("width", "25%").css("margin-left", "auto").css("margin-right", "auto");
+$("#image").html("<video id='kaartVideo1' class='video'><source src='Video/GunShot1.mp4' type='video/mp4'></source>").css("width", "25%").css("margin-left", "auto").css("margin-right", "auto");
 
 	var vid = document.getElementById("kaartVideo1");
 	vid.play();
@@ -506,7 +506,7 @@ $(".buttonShowWrap").hide();
 
 $("#text").html("<span><p>At 12:30 the second shot hit John F. Kennedy and governor Connally. There are a lot of assumptions about this shot, the main one being the so called “magic bullet”. This theory claims that the second bullet went through the neck of John F. Kennedy. This checks out, in the footage you can clearly see John F. Kennedy grabbing his neck. <br><br>But then it gets interesting. The bullet would then have supposedly dropped down and entered the back of the chair of governor Connally.  Piercing one of Connally’s ribs, exiting his body under his right nipple and wound his right wrist and left thigh in the process.</p></span>").css("text-align", "left").css("display", "block").css("color","black").css("float", "left").css("width", "25%");
 
-$("#image").html("<video id='kaartVideo1' class='video'><source src='Video/GunShot2.mp4' type='video/mp4'></source> <source src='Video/GunShot2.webm' type='video/webm'></source></video>").css("width", "25%").css("margin-left", "auto").css("margin-right", "auto");
+$("#image").html("<video id='kaartVideo1' class='video'><source src='Video/GunShot2.mp4' type='video/mp4'></source></video>").css("width", "25%").css("margin-left", "auto").css("margin-right", "auto");
 
 	var vid = document.getElementById("kaartVideo1");
 	vid.play();
@@ -523,7 +523,7 @@ $("#video").html("<span><h2>The Third Shot</h2></span>").css("margin-bottom", "5
 
 $("#text").html("<span><p>At 12:30 the third shot hit John F. Kennedy. Only seconds later than the second shot. This was the fatal shot. This shot chipped the side of his head and inflicted fatal damage to his brain. There are conspiracies about this shot as well. Some people claim he was in the Texas school book depository, other people claim to have heard a shot come from the grassy knoll, the group of trees next to the white pagoda.</p></span>").css("text-align", "left").css("display", "block").css("color","black").css("float", "left").css("width", "25%").css("margin-left", "10%");
 
-$("#image").html("<video id='kaartVideo1' class='video'><source src='Video/GunShot3.mp4' type='video/mp4'></source> <source src='Video/GunShot3.webm' type='video/webm'></source></video>").css("width", "25%").css("margin-left", "auto").css("margin-right", "auto");
+$("#image").html("<video id='kaartVideo1' class='video'><source src='Video/GunShot3.mp4' type='video/mp4'></source></source></video>").css("width", "25%").css("margin-left", "auto").css("margin-right", "auto");
 
 	var vid = document.getElementById("kaartVideo1");
 	vid.play();
@@ -626,7 +626,7 @@ function funeral(){
 	console.log("showing fun");
 	$("#closeIt").unbind().css("z-index","3");
 	$("#funVidDiv").append('<video id="funVid"></video>');
-	$("#funVid").append('<source src="Video/funeral.mp4" type="video/mp4"></source> <source src="Video/funeral.webm" type="video/webm"></source>');
+	$("#funVid").append('<source src="Video/funeral.mp4" type="video/mp4"></source>');
 	var vid = document.getElementById("funVid");
 	vid.play();
 
