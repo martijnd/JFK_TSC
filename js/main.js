@@ -622,7 +622,7 @@ function funeral() {
     $("#closeIt").unbind().css("z-index", "3");
     $("#funVidDiv").append('<video id="funVid"></video>');
     $("#funVid").append(
-        '<source src="Video/funeral.mp4" type="video/mp4"></source>');
+        '<source src="Video/Funeral.mp4" type="video/mp4"></source>');
     var vid = document.getElementById("funVid");
     vid.play();
     //uitleg biiishhh
