@@ -47,7 +47,7 @@ function introPage(){
 	//$("#introBanner").css("top","-20px");
 	$("#artH2").fadeIn(4500);
 	$("#artH1").css("font-family","Mr Dafoe").html("John F. Kennedy").fadeIn();
-	$("#artH2").css("font-family","Special Elite").css("color","white").html("Press the seal to confirm you are 18 years of age.").fadeIn();
+	$("#artH2").css("font-family","Special Elite").css("color","white").html("Press the seal to confirm you are at least 18 years of age.").fadeIn();
 	
 	$("#enterPage").hover(function() {
 		console.log("hover on");
