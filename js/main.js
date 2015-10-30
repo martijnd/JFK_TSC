@@ -144,7 +144,7 @@ function hallway(){
 			$("#gangH2").fadeOut(500).html("You have been working on a report but it isn't done yet. You are missing some last bits of information.").fadeIn(500);
 		}
 		if (closeIt == 7){
-			$("#gangH2").fadeOut(500).html("In your room is a setup that you can use to further you investigation. Click on the arrow to walk to your apartment.").fadeIn(500);
+			$("#gangH2").fadeOut(500).html("In your room is a setup that you can use to further your investigation. Click on the arrow to walk to your apartment.").fadeIn(500);
 		}
 		//code voor laatste klik
 		if (closeIt == 8){
