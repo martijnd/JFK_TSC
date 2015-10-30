@@ -1299,15 +1299,11 @@ video{
     left:50%;
     margin-left:505px;
     margin-top:219px;
-
     z-index:3;
     position:absolute;
-
-
     opacity:0;
     background-image:url('../imgs/cuts/doge.png');
     background-color:none !important;
-
     border:none;
     cursor: pointer;
 }

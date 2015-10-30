@@ -232,10 +232,11 @@ function livingroom(){
 
 	$("#tvPic").append('<video id="tvTimeVid"></video>');
 	$("#radioPic").append('<audio id="radioTimeAud"></audio>');
+	$("#dogeOverlay").append('<audio id="dogeTimeAud"></audio>');
 	
 	$("#tvTimeVid").append('<source src="Video/videoZap.mp4" type="video/mp4"></source>');
 	$("#radioTimeAud").append('<source src="Audio/radioPres.mp3" type="audio/mp3"></source>');	
-
+	$("#dogeTimeAud").append('<source src="Audio/wow.mp3" type="audio/mp3"></source>');	
 		//tijd voor een beetje uitleg
 	$("#tvUitleg").fadeIn(2000);
 	$("#tvH2").html("You can now explore this room to investigate the case.").delay(2500).fadeOut(500).queue(function(){
@@ -345,6 +346,8 @@ function livingroom(){
 	$("#dogeOverlay").hover(function(){
 			$("#dogeTime").fadeIn(500);
 			$("#overPicDoge").css("transform", "scale(1.125)");
+			var aud = document.getElementById("dogeTimeAud");
+				aud.play();
 		},
 		function(){
 			$("#dogeTime").fadeOut(500);
